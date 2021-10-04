@@ -13,7 +13,7 @@ https://hermes-dev.devteam.win/american-burger-pizza-house-augsburg/159
 
 ### 3. Test cases
 
-####Test case 1:
+#### Test case 1:   
 _Description:_ Search works.   
 _Steps:_    
   * Open main page;    
@@ -21,7 +21,7 @@ _Steps:_
 
 _Expected result:_ "Carbonara" is in search result.   
 
-####Test case 2:
+#### Test case 2:   
 _Description:_ Product is added to cart with correct price.   
 _Steps:_    
   * Open main page;    
@@ -32,7 +32,7 @@ _Steps:_
 
 _Expected result:_ Cheeseburger is shown in the cart with correct price.  
 
-####Test case 3:
+#### Test case 3:   
 _Description:_ Qty of product can be increased via Cart.   
 _Steps:_    
   * Open main page;    
@@ -43,7 +43,7 @@ _Steps:_
 
 _Expected result:_ Qty is increased by 1, total price is increased.
 
-####Test case 4:
+#### Test case 4:   
 _Description:_ Success purchase by Cash.   
 _Steps:_    
   * Open main page;    
@@ -58,7 +58,7 @@ _Steps:_
  
 _Expected result:_ "Ihre Bestellung wurde erfolgreich an uns übermittelt! Eine Bestellbestätigung wurde an folgende E-Mail-Adresse gesendet: {email}."  message is shown.
 
-####Test case 5:
+#### Test case 5:   
 _Description:_ Not available product can't be purchased.   
 _Steps:_    
   * Open main page;    
@@ -71,7 +71,7 @@ _Steps:_
 
 _Expected result:_ Modal is closed, Cart is empty.
 
-####Test case 6:
+#### Test case 6:   
 _Description:_ Search by non-existing product works.   
 _Steps:_
 * Open main page;
