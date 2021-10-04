@@ -1,0 +1,74 @@
+{
+  "info": {
+    "_postman_id": "cc294166-b269-4fc5-ba94-6d71e63a4d23",
+    "name": "appSmart",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "https://dev.delivery-app.app-smart.services/api2.5/cdMiu0eNA2OJ58Z3/get-single-product/159/999931223",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "pm.test(\"Check d is empty\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "    pm.expect(jsonData.d).is.empty;\r",
+              "});\r",
+              ""
+            ]
+          }
+        }
+      ],
+      "id": "e08ef61f-7fda-4ef7-9ce3-675f55758c70",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "https://dev.delivery-app.app-smart.services/api2.5/cdMiu0eNA2OJ58Z3/get-single-product/159/999931223"
+      },
+      "response": []
+    },
+    {
+      "name": "https://dev.delivery-app.app-smart.services/api2.5/cdMiu0eNA2OJ58Z3/get-single-product/159/29555",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "pm.test(\"Check name\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "    pm.expect(jsonData.d.name).to.eql(\"Big Aux Burger\");\r",
+              "});\r",
+              "pm.test(\"Response time is less than 200ms\", function () {\r",
+              "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+              "});"
+            ]
+          }
+        }
+      ],
+      "id": "d9c507c2-3b3e-43fa-9f13-e6031f2f7655",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "https://dev.delivery-app.app-smart.services/api2.5/cdMiu0eNA2OJ58Z3/get-single-product/159/{{product_id}}"
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "id": "b7fffadc-bb55-46b8-9d0b-e3a1590aa932",
+      "key": "product_id",
+      "value": "25559"
+    }
+  ]
+}
